@@ -1,0 +1,9 @@
+[2024-05-20 23:08:04,581] root 35 - INFO read the data as data frame
+[2024-05-20 23:08:04,627] root 38 - INFO split the data into train test split
+[2024-05-20 23:08:04,687] root 44 - INFO data ingenstion has completed
+[2024-05-20 23:08:04,716] root 71 - INFO read the data as data frame
+[2024-05-20 23:08:04,717] root 72 - INFO obtaining preprocessor object
+[2024-05-20 23:08:04,717] root 51 - INFO numerical columns['reading_score', 'writing_score']
+[2024-05-20 23:08:04,717] root 52 - INFO categorical columns['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[2024-05-20 23:08:04,738] root 84 - INFO applying preprocessor object on training and testing dataset
+[2024-05-20 23:08:04,798] root 95 - INFO saved preprocessor
