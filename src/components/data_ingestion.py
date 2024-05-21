@@ -6,11 +6,15 @@ from src.exception import CustomException
 from sklearn.model_selection import train_test_split
 import pandas as pd 
 import numpy as np
-from src.utils import saved_object 
+from src.utils import save_object ,evaluate_models
 
 
 from src.components.data_transformation import DataTransformation
 from src.components.data_transformation import DataTransformationConfig
+
+from src.components.model_trainer import ModelTrainer
+from src.components.model_trainer import ModelTrainerConfig
+
 
 
 
@@ -60,5 +64,10 @@ if __name__=="__main__":
     
     data_transformation=DataTransformation()
     train_arr,test_arr,_=data_transformation.initiate_data_transformation(train_data,test_data)
+    
+    
+    modeltrained = ModelTrainer()
+    print(modeltrained.initiate_model_trainer(train_arr,test_arr))
+    
     
     

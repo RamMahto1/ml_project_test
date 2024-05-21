@@ -9,7 +9,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
-from src.utils import saved_object
+from src.utils import save_object
 from dataclasses import dataclass
 
 
@@ -94,7 +94,7 @@ class DataTransformation:
             
             logging.info(f"saved preprocessor")
             
-            saved_object(
+            save_object(
                 file_path=self.data_transformation_config.preprocessor_file_path_object,
                 obj=preprocessing_obj
             )
